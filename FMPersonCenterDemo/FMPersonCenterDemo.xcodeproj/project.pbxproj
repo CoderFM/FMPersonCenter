@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		152649731E5459A100EF0FBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 152649721E5459A100EF0FBE /* main.m */; };
+		152649761E5459A100EF0FBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 152649751E5459A100EF0FBE /* AppDelegate.m */; };
+		152649791E5459A100EF0FBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152649781E5459A100EF0FBE /* ViewController.m */; };
+		1526497C1E5459A100EF0FBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1526497A1E5459A100EF0FBE /* Main.storyboard */; };
+		1526497E1E5459A100EF0FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1526497D1E5459A100EF0FBE /* Assets.xcassets */; };
+		152649811E5459A100EF0FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1526497F1E5459A100EF0FBE /* LaunchScreen.storyboard */; };
+		1526498C1E5459A200EF0FBE /* FMPersonCenterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1526498B1E5459A200EF0FBE /* FMPersonCenterDemoTests.m */; };
+		152649971E5459A200EF0FBE /* FMPersonCenterDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 152649961E5459A200EF0FBE /* FMPersonCenterDemoUITests.m */; };
+		152649AA1E545A8A00EF0FBE /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 152649A41E545A8A00EF0FBE /* 1.jpg */; };
+		152649AB1E545A8A00EF0FBE /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 152649A61E545A8A00EF0FBE /* HeaderView.m */; };
+		152649AC1E545A8A00EF0FBE /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 152649A71E545A8A00EF0FBE /* HeaderView.xib */; };
+		152649AD1E545A8A00EF0FBE /* PersonCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152649A91E545A8A00EF0FBE /* PersonCenterController.m */; };
+		152649B31E545AC200EF0FBE /* FMScrollSubBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152649B01E545AC200EF0FBE /* FMScrollSubBaseController.m */; };
+		152649B41E545AC200EF0FBE /* FMScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152649B21E545AC200EF0FBE /* FMScrollViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		152649881E5459A200EF0FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152649661E5459A100EF0FBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1526496D1E5459A100EF0FBE;
+			remoteInfo = FMPersonCenterDemo;
+		};
+		152649931E5459A200EF0FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152649661E5459A100EF0FBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1526496D1E5459A100EF0FBE;
+			remoteInfo = FMPersonCenterDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1526496E1E5459A100EF0FBE /* FMPersonCenterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMPersonCenterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		152649721E5459A100EF0FBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		152649741E5459A100EF0FBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		152649751E5459A100EF0FBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		152649771E5459A100EF0FBE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		152649781E5459A100EF0FBE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1526497B1E5459A100EF0FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1526497D1E5459A100EF0FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		152649801E5459A100EF0FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		152649821E5459A100EF0FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		152649871E5459A200EF0FBE /* FMPersonCenterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMPersonCenterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1526498B1E5459A200EF0FBE /* FMPersonCenterDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMPersonCenterDemoTests.m; sourceTree = "<group>"; };
+		1526498D1E5459A200EF0FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		152649921E5459A200EF0FBE /* FMPersonCenterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMPersonCenterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		152649961E5459A200EF0FBE /* FMPersonCenterDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMPersonCenterDemoUITests.m; sourceTree = "<group>"; };
+		152649981E5459A200EF0FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		152649A41E545A8A00EF0FBE /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		152649A51E545A8A00EF0FBE /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		152649A61E545A8A00EF0FBE /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		152649A71E545A8A00EF0FBE /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		152649A81E545A8A00EF0FBE /* PersonCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCenterController.h; sourceTree = "<group>"; };
+		152649A91E545A8A00EF0FBE /* PersonCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCenterController.m; sourceTree = "<group>"; };
+		152649AF1E545AC200EF0FBE /* FMScrollSubBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMScrollSubBaseController.h; sourceTree = "<group>"; };
+		152649B01E545AC200EF0FBE /* FMScrollSubBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMScrollSubBaseController.m; sourceTree = "<group>"; };
+		152649B11E545AC200EF0FBE /* FMScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMScrollViewController.h; sourceTree = "<group>"; };
+		152649B21E545AC200EF0FBE /* FMScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMScrollViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1526496B1E5459A100EF0FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		152649841E5459A200EF0FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1526498F1E5459A200EF0FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		152649651E5459A100EF0FBE = {
+			isa = PBXGroup;
+			children = (
+				152649701E5459A100EF0FBE /* FMPersonCenterDemo */,
+				1526498A1E5459A200EF0FBE /* FMPersonCenterDemoTests */,
+				152649951E5459A200EF0FBE /* FMPersonCenterDemoUITests */,
+				1526496F1E5459A100EF0FBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1526496F1E5459A100EF0FBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1526496E1E5459A100EF0FBE /* FMPersonCenterDemo.app */,
+				152649871E5459A200EF0FBE /* FMPersonCenterDemoTests.xctest */,
+				152649921E5459A200EF0FBE /* FMPersonCenterDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		152649701E5459A100EF0FBE /* FMPersonCenterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				152649AE1E545AC200EF0FBE /* FMPersonCenter */,
+				152649741E5459A100EF0FBE /* AppDelegate.h */,
+				152649751E5459A100EF0FBE /* AppDelegate.m */,
+				152649771E5459A100EF0FBE /* ViewController.h */,
+				152649781E5459A100EF0FBE /* ViewController.m */,
+				152649A41E545A8A00EF0FBE /* 1.jpg */,
+				152649A51E545A8A00EF0FBE /* HeaderView.h */,
+				152649A61E545A8A00EF0FBE /* HeaderView.m */,
+				152649A71E545A8A00EF0FBE /* HeaderView.xib */,
+				152649A81E545A8A00EF0FBE /* PersonCenterController.h */,
+				152649A91E545A8A00EF0FBE /* PersonCenterController.m */,
+				1526497A1E5459A100EF0FBE /* Main.storyboard */,
+				1526497D1E5459A100EF0FBE /* Assets.xcassets */,
+				1526497F1E5459A100EF0FBE /* LaunchScreen.storyboard */,
+				152649821E5459A100EF0FBE /* Info.plist */,
+				152649711E5459A100EF0FBE /* Supporting Files */,
+			);
+			path = FMPersonCenterDemo;
+			sourceTree = "<group>";
+		};
+		152649711E5459A100EF0FBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				152649721E5459A100EF0FBE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1526498A1E5459A200EF0FBE /* FMPersonCenterDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1526498B1E5459A200EF0FBE /* FMPersonCenterDemoTests.m */,
+				1526498D1E5459A200EF0FBE /* Info.plist */,
+			);
+			path = FMPersonCenterDemoTests;
+			sourceTree = "<group>";
+		};
+		152649951E5459A200EF0FBE /* FMPersonCenterDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				152649961E5459A200EF0FBE /* FMPersonCenterDemoUITests.m */,
+				152649981E5459A200EF0FBE /* Info.plist */,
+			);
+			path = FMPersonCenterDemoUITests;
+			sourceTree = "<group>";
+		};
+		152649AE1E545AC200EF0FBE /* FMPersonCenter */ = {
+			isa = PBXGroup;
+			children = (
+				152649AF1E545AC200EF0FBE /* FMScrollSubBaseController.h */,
+				152649B01E545AC200EF0FBE /* FMScrollSubBaseController.m */,
+				152649B11E545AC200EF0FBE /* FMScrollViewController.h */,
+				152649B21E545AC200EF0FBE /* FMScrollViewController.m */,
+			);
+			path = FMPersonCenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1526496D1E5459A100EF0FBE /* FMPersonCenterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1526499B1E5459A200EF0FBE /* Build configuration list for PBXNativeTarget "FMPersonCenterDemo" */;
+			buildPhases = (
+				1526496A1E5459A100EF0FBE /* Sources */,
+				1526496B1E5459A100EF0FBE /* Frameworks */,
+				1526496C1E5459A100EF0FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMPersonCenterDemo;
+			productName = FMPersonCenterDemo;
+			productReference = 1526496E1E5459A100EF0FBE /* FMPersonCenterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		152649861E5459A200EF0FBE /* FMPersonCenterDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1526499E1E5459A200EF0FBE /* Build configuration list for PBXNativeTarget "FMPersonCenterDemoTests" */;
+			buildPhases = (
+				152649831E5459A200EF0FBE /* Sources */,
+				152649841E5459A200EF0FBE /* Frameworks */,
+				152649851E5459A200EF0FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				152649891E5459A200EF0FBE /* PBXTargetDependency */,
+			);
+			name = FMPersonCenterDemoTests;
+			productName = FMPersonCenterDemoTests;
+			productReference = 152649871E5459A200EF0FBE /* FMPersonCenterDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		152649911E5459A200EF0FBE /* FMPersonCenterDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 152649A11E5459A200EF0FBE /* Build configuration list for PBXNativeTarget "FMPersonCenterDemoUITests" */;
+			buildPhases = (
+				1526498E1E5459A200EF0FBE /* Sources */,
+				1526498F1E5459A200EF0FBE /* Frameworks */,
+				152649901E5459A200EF0FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				152649941E5459A200EF0FBE /* PBXTargetDependency */,
+			);
+			name = FMPersonCenterDemoUITests;
+			productName = FMPersonCenterDemoUITests;
+			productReference = 152649921E5459A200EF0FBE /* FMPersonCenterDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		152649661E5459A100EF0FBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "周发明";
+				TargetAttributes = {
+					1526496D1E5459A100EF0FBE = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 5FVZG33394;
+						ProvisioningStyle = Automatic;
+					};
+					152649861E5459A200EF0FBE = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 5FVZG33394;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1526496D1E5459A100EF0FBE;
+					};
+					152649911E5459A200EF0FBE = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 5FVZG33394;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1526496D1E5459A100EF0FBE;
+					};
+				};
+			};
+			buildConfigurationList = 152649691E5459A100EF0FBE /* Build configuration list for PBXProject "FMPersonCenterDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 152649651E5459A100EF0FBE;
+			productRefGroup = 1526496F1E5459A100EF0FBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1526496D1E5459A100EF0FBE /* FMPersonCenterDemo */,
+				152649861E5459A200EF0FBE /* FMPersonCenterDemoTests */,
+				152649911E5459A200EF0FBE /* FMPersonCenterDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1526496C1E5459A100EF0FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152649811E5459A100EF0FBE /* LaunchScreen.storyboard in Resources */,
+				152649AC1E545A8A00EF0FBE /* HeaderView.xib in Resources */,
+				152649AA1E545A8A00EF0FBE /* 1.jpg in Resources */,
+				1526497E1E5459A100EF0FBE /* Assets.xcassets in Resources */,
+				1526497C1E5459A100EF0FBE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		152649851E5459A200EF0FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		152649901E5459A200EF0FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1526496A1E5459A100EF0FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152649791E5459A100EF0FBE /* ViewController.m in Sources */,
+				152649761E5459A100EF0FBE /* AppDelegate.m in Sources */,
+				152649731E5459A100EF0FBE /* main.m in Sources */,
+				152649B31E545AC200EF0FBE /* FMScrollSubBaseController.m in Sources */,
+				152649B41E545AC200EF0FBE /* FMScrollViewController.m in Sources */,
+				152649AD1E545A8A00EF0FBE /* PersonCenterController.m in Sources */,
+				152649AB1E545A8A00EF0FBE /* HeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		152649831E5459A200EF0FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1526498C1E5459A200EF0FBE /* FMPersonCenterDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1526498E1E5459A200EF0FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152649971E5459A200EF0FBE /* FMPersonCenterDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		152649891E5459A200EF0FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1526496D1E5459A100EF0FBE /* FMPersonCenterDemo */;
+			targetProxy = 152649881E5459A200EF0FBE /* PBXContainerItemProxy */;
+		};
+		152649941E5459A200EF0FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1526496D1E5459A100EF0FBE /* FMPersonCenterDemo */;
+			targetProxy = 152649931E5459A200EF0FBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1526497A1E5459A100EF0FBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1526497B1E5459A100EF0FBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1526497F1E5459A100EF0FBE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				152649801E5459A100EF0FBE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		152649991E5459A200EF0FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1526499A1E5459A200EF0FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1526499C1E5459A200EF0FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5FVZG33394;
+				INFOPLIST_FILE = FMPersonCenterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMPersonCenterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1526499D1E5459A200EF0FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5FVZG33394;
+				INFOPLIST_FILE = FMPersonCenterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMPersonCenterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1526499F1E5459A200EF0FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5FVZG33394;
+				INFOPLIST_FILE = FMPersonCenterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMPersonCenterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMPersonCenterDemo.app/FMPersonCenterDemo";
+			};
+			name = Debug;
+		};
+		152649A01E5459A200EF0FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5FVZG33394;
+				INFOPLIST_FILE = FMPersonCenterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMPersonCenterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMPersonCenterDemo.app/FMPersonCenterDemo";
+			};
+			name = Release;
+		};
+		152649A21E5459A200EF0FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5FVZG33394;
+				INFOPLIST_FILE = FMPersonCenterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMPersonCenterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FMPersonCenterDemo;
+			};
+			name = Debug;
+		};
+		152649A31E5459A200EF0FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5FVZG33394;
+				INFOPLIST_FILE = FMPersonCenterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zfm.FMPersonCenterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FMPersonCenterDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		152649691E5459A100EF0FBE /* Build configuration list for PBXProject "FMPersonCenterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				152649991E5459A200EF0FBE /* Debug */,
+				1526499A1E5459A200EF0FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1526499B1E5459A200EF0FBE /* Build configuration list for PBXNativeTarget "FMPersonCenterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1526499C1E5459A200EF0FBE /* Debug */,
+				1526499D1E5459A200EF0FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1526499E1E5459A200EF0FBE /* Build configuration list for PBXNativeTarget "FMPersonCenterDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1526499F1E5459A200EF0FBE /* Debug */,
+				152649A01E5459A200EF0FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		152649A11E5459A200EF0FBE /* Build configuration list for PBXNativeTarget "FMPersonCenterDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				152649A21E5459A200EF0FBE /* Debug */,
+				152649A31E5459A200EF0FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 152649661E5459A100EF0FBE /* Project object */;
+}
