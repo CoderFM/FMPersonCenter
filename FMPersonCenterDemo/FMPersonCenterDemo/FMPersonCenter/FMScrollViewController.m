@@ -25,6 +25,8 @@
  */
 @property(nonatomic, assign)CGFloat navViewHeight;
 
+@property(nonatomic, assign)CGFloat defaultTopMargin;
+
 @end
 
 @implementation FMScrollViewController
@@ -35,6 +37,7 @@
         self.classes = classes;
         self.headerViewHeight = headerViewHeight;
         self.navViewHeight = navViewHeight;
+        self.defaultTopMargin = self.hasNavBar ? 64 : 0;
     }
     
     return self;
@@ -55,7 +58,7 @@
 
 - (void)viewWillLayoutSubviews{
     [super viewWillLayoutSubviews];
-    self.scrollView.frame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64);
+    self.scrollView.frame = CGRectMake(0, self.defaultTopMargin, SCREEN_WIDTH, SCREEN_HEIGHT - self.defaultTopMargin);
     [self initSubChildController];
 }
 
@@ -63,6 +66,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)headerContentViewFrameChange:(CGRect)frame{
+    
+}
+
 /**
  *  实例化子类的方法
  */
@@ -76,7 +84,7 @@
         
         FMScrollSubBaseController *table = [[FMScrollSubBaseController alloc] initWithHeaderViewHeight:self.headerViewHeight navHeight:self.navViewHeight];
         
-        table.view.frame = CGRectMake(SCREEN_WIDTH * i, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64);
+        table.view.frame = CGRectMake(SCREEN_WIDTH * i, 0, SCREEN_WIDTH, SCREEN_HEIGHT - self.defaultTopMargin);
         
         [self addChildViewController:table];
         
@@ -94,19 +102,30 @@
     
     CGFloat offsetY = [noti.object floatValue];
     
+    CGRect frame = self.headerContentView.frame;
+    
     if (offsetY > self.headerViewHeight) {
         offsetY = self.headerViewHeight;
     }
     
-    CGRect frame = self.headerContentView.frame;
+    if (self.hasHeaderZoom) {
+        if (offsetY < 0) {
+            frame.size.height = self.headerViewHeight - offsetY;
+            offsetY = 0;
+        } else {
+            frame.size.height = self.headerViewHeight;
+        }
+    }
     
-    frame.origin.y = - offsetY + 64;
+    frame.origin.y = - offsetY + self.defaultTopMargin;
     
     self.headerContentView.frame = frame;
     
+    [self headerContentViewFrameChange:frame];
+    
     CGRect navFrame = self.navContentView.frame;
     
-    navFrame.origin.y = - offsetY + 64 + self.headerViewHeight;
+    navFrame.origin.y = CGRectGetMaxY(self.headerContentView.frame);
     
     self.navContentView.frame = navFrame;
 }
@@ -115,7 +134,7 @@
     if (_scrollView == nil) {
         UIScrollView *scrollView = [[UIScrollView alloc] init];
         scrollView.backgroundColor = [UIColor redColor];
-        scrollView.contentSize = CGSizeMake(SCREEN_WIDTH * 3, SCREEN_HEIGHT - 64);
+        scrollView.contentSize = CGSizeMake(SCREEN_WIDTH * 3, SCREEN_HEIGHT - self.defaultTopMargin);
         scrollView.pagingEnabled = YES;
         scrollView.delegate = self;
         scrollView.bounces = NO;
@@ -133,7 +152,9 @@
         
         headerView.backgroundColor = [UIColor redColor];
         
-        headerView.frame = CGRectMake(0, 64, SCREEN_WIDTH, self.headerViewHeight);
+        headerView.frame = CGRectMake(0, self.defaultTopMargin, SCREEN_WIDTH, self.headerViewHeight);
+        
+        headerView.clipsToBounds = YES;
         
         [self.view addSubview:headerView];
         
@@ -147,11 +168,16 @@
     if (_navContentView == nil) {
         UIView *view = [[UIView alloc] init];
         view.backgroundColor = [UIColor orangeColor];
-        view.frame = CGRectMake(0, 64 + self.headerViewHeight, SCREEN_WIDTH, self.navViewHeight);
+        view.frame = CGRectMake(0, self.defaultTopMargin + self.headerViewHeight, SCREEN_WIDTH, self.navViewHeight);
+        view.clipsToBounds = YES;
         [self.view addSubview:view];
         _navContentView = view;
     }
     return _navContentView;
+}
+
+- (BOOL)hasNavBar{
+    return YES;
 }
 
 - (void)dealloc{

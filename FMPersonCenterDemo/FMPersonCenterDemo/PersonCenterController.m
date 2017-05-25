@@ -21,6 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self headerView];
     // Do any additional setup after loading the view.
 }
 
@@ -35,6 +37,10 @@
     self.segment.frame = self.navContentView.bounds;
 }
 
+- (void)headerContentViewFrameChange:(CGRect)frame{
+    self.headerView.frame = self.headerContentView.bounds;
+}
+
 - (void)segmentValueChange:(UISegmentedControl *)segment{
     [self.scrollView setContentOffset:CGPointMake(self.scrollView.bounds.size.width * segment.selectedSegmentIndex, 0) animated:YES];
 }
@@ -44,9 +50,7 @@
 }
 
 - (HeaderView *)headerView{
-    
     if (_headerView == nil) {
-        
         HeaderView *header = [HeaderView viewForXib];
         [self.headerContentView addSubview:header];
         _headerView = header;
@@ -77,6 +81,14 @@
         
     }
     return _segment;
+}
+
+- (BOOL)hasHeaderZoom{
+    return YES;
+}
+
+- (BOOL)hasNavBar{
+    return NO;
 }
 
 @end

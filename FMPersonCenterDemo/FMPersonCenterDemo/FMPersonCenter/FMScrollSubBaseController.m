@@ -7,6 +7,7 @@
 //
 
 #import "FMScrollSubBaseController.h"
+#import "ViewController1.h"
 
 @interface FMScrollSubBaseController ()
 
@@ -99,31 +100,41 @@
     }
     return _tableView;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ViewController1 *view = [[ViewController1 alloc] init];
+    [self.navigationController pushViewController:view animated:YES];
+}
+
 /**
  *  滚动, 发送通知
  */
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    [[NSNotificationCenter defaultCenter] postNotificationName:FMScrollSubBaseTableScrollNotiKey object:@(scrollView.contentOffset.y)];
+    [[NSNotificationCenter defaultCenter] postNotificationName:FMScrollSubBaseTableScrollNotiKey object:@(scrollView.contentOffset.y) userInfo:@{@"sender":self}];
 }
 /**
  *  其他列表滚动, 监听通知, 改变y轴的偏移量
  */
 - (void)_fmscrollSubBaseTableScrollNoti:(NSNotification *)noti{
-    CGFloat offsetY = [noti.object floatValue];
-    if (offsetY < self.headerViewHeight) {
-        /* 滚动的tableView的头部视图是在屏幕范围内的
-        此时其他列表的y值偏移量, 与当前滚动的这个列表的偏移量是一样的
-         */
-        self.tableView.contentOffset = CGPointMake(0, offsetY);
-    }  else {
-        /*
-         此时头部视图已不再屏幕显示的范围上
-         需要判断的是, 当前这个列表的偏移, 是不是已经在正好滚动到上面(也就是导航View的下面), 如果是小于这个头部视图的, 要让它滚动到导航视图的下面, 否则不用管,
-         这里如果不判断的话, 快速滚动, 再去看其他列表, 会出现, 第一个Cell的顶部, 与导航View中间有间距
-         */
-        if (self.tableView.contentOffset.y < self.headerViewHeight) {
-            self.tableView.contentOffset = CGPointMake(0, self.headerViewHeight);
+    id sender = noti.userInfo[@"sender"];
+    if (sender != self) {
+        CGFloat offsetY = [noti.object floatValue];
+        if (offsetY < self.headerViewHeight) {
+            /* 滚动的tableView的头部视图是在屏幕范围内的
+             此时其他列表的y值偏移量, 与当前滚动的这个列表的偏移量是一样的
+             */
+            self.tableView.contentOffset = CGPointMake(0, offsetY);
+        }  else {
+            /*
+             此时头部视图已不再屏幕显示的范围上
+             需要判断的是, 当前这个列表的偏移, 是不是已经在正好滚动到上面(也就是导航View的下面), 如果是小于这个头部视图的, 要让它滚动到导航视图的下面, 否则不用管,
+             这里如果不判断的话, 快速滚动, 再去看其他列表, 会出现, 第一个Cell的顶部, 与导航View中间有间距
+             */
+            if (self.tableView.contentOffset.y < self.headerViewHeight) {
+                self.tableView.contentOffset = CGPointMake(0, self.headerViewHeight);
+            }
         }
+
     }
 }
 

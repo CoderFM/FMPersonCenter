@@ -16,8 +16,6 @@
 
 @property(nonatomic, weak)UITableView *tableView;
 
-
-
 - (instancetype)init NS_UNAVAILABLE;
 
 - (instancetype)initWithHeaderViewHeight:(CGFloat)headerViewHeight navHeight:(CGFloat)navHeight;

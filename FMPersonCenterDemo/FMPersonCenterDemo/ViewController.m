@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "PersonCenterController.h"
-#import "FMScrollSubBaseController.h"
+#import "SubViewController.h"
 
 @interface ViewController ()
 
@@ -27,7 +27,7 @@
 }
 
 - (IBAction)button:(id)sender {
-    PersonCenterController *roll = [[PersonCenterController alloc] initWithClasses:@[[FMScrollSubBaseController class], [FMScrollSubBaseController class], [FMScrollSubBaseController class]] headerViewHeight:200 navViewHeight:50];
+    PersonCenterController *roll = [[PersonCenterController alloc] initWithClasses:@[[SubViewController class], [SubViewController class], [SubViewController class]] headerViewHeight:200 navViewHeight:50];
     [self.navigationController pushViewController:roll animated:YES];
 }
 

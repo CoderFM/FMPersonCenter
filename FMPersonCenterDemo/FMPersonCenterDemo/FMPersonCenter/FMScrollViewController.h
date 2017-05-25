@@ -36,4 +36,19 @@
 
 @property(nonatomic, strong)NSArray *classes;
 
+/**
+ 头部是否有放大效果   默认没有
+ */
+@property(nonatomic, assign, readonly)BOOL  hasHeaderZoom;
+
+/**
+ 是否有顶部导航栏
+ */
+@property(nonatomic, assign, readonly)BOOL  hasNavBar;
+
+/**
+ 头部视图尺寸变化     针对方法缩小可调用
+ */
+- (void)headerContentViewFrameChange:(CGRect)frame;
+
 @end

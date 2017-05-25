@@ -21,6 +21,8 @@
 		152649AD1E545A8A00EF0FBE /* PersonCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152649A91E545A8A00EF0FBE /* PersonCenterController.m */; };
 		152649B31E545AC200EF0FBE /* FMScrollSubBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152649B01E545AC200EF0FBE /* FMScrollSubBaseController.m */; };
 		152649B41E545AC200EF0FBE /* FMScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152649B21E545AC200EF0FBE /* FMScrollViewController.m */; };
+		153AA6971EB7780400F27E62 /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153AA6961EB7780400F27E62 /* SubViewController.m */; };
+		153AA69A1EB7785C00F27E62 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 153AA6991EB7785C00F27E62 /* ViewController1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		152649B01E545AC200EF0FBE /* FMScrollSubBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMScrollSubBaseController.m; sourceTree = "<group>"; };
 		152649B11E545AC200EF0FBE /* FMScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMScrollViewController.h; sourceTree = "<group>"; };
 		152649B21E545AC200EF0FBE /* FMScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMScrollViewController.m; sourceTree = "<group>"; };
+		153AA6951EB7780400F27E62 /* SubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		153AA6961EB7780400F27E62 /* SubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
+		153AA6981EB7785C00F27E62 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		153AA6991EB7785C00F27E62 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,12 +128,16 @@
 				152649751E5459A100EF0FBE /* AppDelegate.m */,
 				152649771E5459A100EF0FBE /* ViewController.h */,
 				152649781E5459A100EF0FBE /* ViewController.m */,
+				153AA6981EB7785C00F27E62 /* ViewController1.h */,
+				153AA6991EB7785C00F27E62 /* ViewController1.m */,
 				152649A41E545A8A00EF0FBE /* 1.jpg */,
 				152649A51E545A8A00EF0FBE /* HeaderView.h */,
 				152649A61E545A8A00EF0FBE /* HeaderView.m */,
 				152649A71E545A8A00EF0FBE /* HeaderView.xib */,
 				152649A81E545A8A00EF0FBE /* PersonCenterController.h */,
 				152649A91E545A8A00EF0FBE /* PersonCenterController.m */,
+				153AA6951EB7780400F27E62 /* SubViewController.h */,
+				153AA6961EB7780400F27E62 /* SubViewController.m */,
 				1526497A1E5459A100EF0FBE /* Main.storyboard */,
 				1526497D1E5459A100EF0FBE /* Assets.xcassets */,
 				1526497F1E5459A100EF0FBE /* LaunchScreen.storyboard */,
@@ -319,6 +329,8 @@
 				152649B41E545AC200EF0FBE /* FMScrollViewController.m in Sources */,
 				152649AD1E545A8A00EF0FBE /* PersonCenterController.m in Sources */,
 				152649AB1E545A8A00EF0FBE /* HeaderView.m in Sources */,
+				153AA6971EB7780400F27E62 /* SubViewController.m in Sources */,
+				153AA69A1EB7785C00F27E62 /* ViewController1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
